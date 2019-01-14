@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingLeft="5dp"
+
+    android:paddingTop="5dp"
+
+    android:paddingBottom="5dp"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="页面1"
+        android:textSize="30sp" />
+
+    <!--
+        app:autoBack="true"           //松手后是否自动回到父布局左侧或右侧
+        app:millisInFuture="2500"     //从松手到淡出的时间
+        app:toAlpha="0.3"             //淡出后的透明度值
+        app:moveable="true">          //是否能拖动
+
+
+        -->
+
+
+    <sbingo.freeradiogroup.FreeRadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/black_bg"
+        app:autoBack="true"
+        app:millisInFuture="2500"
+        app:moveable="true">
+
+
+        <RadioButton
+
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:text="页面1"
+            android:textColor="@drawable/text_color_selector" />
+
+
+        <RadioButton
+
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:text="页面2"
+            android:textColor="@drawable/text_color_selector" />
+
+
+        <RadioButton
+
+            android:id="@+id/rb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:text="页面3"
+            android:textColor="@drawable/text_color_selector" />
+
+    </sbingo.freeradiogroup.FreeRadioGroup>
+
+
+</FrameLayout>
